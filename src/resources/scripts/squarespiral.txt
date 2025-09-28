@@ -1,0 +1,20 @@
+setspeed(196884)
+setsize(0.1)
+
+DEF square(size){
+  forward(size); turn(90)
+  forward(size); turn(90)
+  forward(size); turn(90)
+  forward(size); turn(90)
+}
+
+size = 200
+angle = -7.5
+
+LOOP96{
+  square(size)
+  size = mul(size, 0.97)
+  turn(angle)
+}
+
+setpos(0,0)

@@ -1,0 +1,17 @@
+up
+setpos(50,500)
+down
+
+setspeed(99999)
+size=10
+angle=1.3
+step=10
+
+LOOP333{
+  setsize(size)
+  forward(step); turn(angle);
+  size=add(size,-0.1)
+  angle=add(angle,0.05)
+}
+
+why does loop length affect spiral shape?

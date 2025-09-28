@@ -1,0 +1,15 @@
+setspeed(777)
+up
+setpos(128,400)
+down
+r=333
+
+LOOP38{
+  arc(r,360) 
+  forward(1)
+  r=mul(r,0.9)
+}
+
+up
+setpos(0,0)
+

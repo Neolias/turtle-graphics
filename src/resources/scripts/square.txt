@@ -1,0 +1,23 @@
+LOOP3{
+  forward(100)
+  turn(90)
+}
+forward(200)
+
+arc(100)
+arc(200,120)
+
+
+fasg # ERRONEOUS LINES ARE IGNORED
+
+#LOOP500{
+#  turn(1)
+#  forward(1)
+#  g
+#}
+
+#DEF turntwice(x){
+#  turn(x);turn(x);
+#}
+
+#turntwice(90)

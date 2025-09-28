@@ -1,0 +1,25 @@
+forward(30)
+turn(30)
+turn(30)
+turn(30)
+turn(30)
+turn(30)
+turn(30)
+forward(100)
+
+fasg # ERRONEOUS LINES ARE IGNORED
+
+#LOOP500{
+#  turn(1)
+#  forward(1)
+#}
+
+DEF turntwice(x){
+  turn(x);turn(x);
+}
+
+DEF movetwice(x){
+  forward(x);forward(x);
+}
+
+turntwice(90)

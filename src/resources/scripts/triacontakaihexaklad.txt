@@ -1,0 +1,18 @@
+setspeed(99999999999999999)
+setsize(3)
+
+DEF branch(dir){
+  up
+  setpos(450,450); setrot(dir)
+  down
+  forward(100); turn(90); forward(100);
+  up
+}
+
+a=0
+LOOP36{
+  branch(a)
+  a=add(a,10)
+}
+
+setpos(0,0)

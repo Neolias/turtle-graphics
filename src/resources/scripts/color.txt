@@ -1,0 +1,13 @@
+setsize(9)
+setspeed(1000)
+
+r=0
+g=255
+b=100
+
+LOOP233{
+  setcolor(r,g,b)
+  r=add(r,1)
+  g=add(g,-1)
+  forward(1)
+}

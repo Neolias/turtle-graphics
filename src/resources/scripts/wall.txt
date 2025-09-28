@@ -1,0 +1,123 @@
+DEF cut(x){
+  x=add(x,20)
+  up
+  setpos(x,0);
+  down
+
+  stepsize=90
+  shiftsize=28
+  angle=190  
+  
+  setsize(7)
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setrot(90); forward(shiftsize);
+  setrot(angle); forward(stepsize)
+  setsize(1);
+  setrot(352); forward(628);
+  setsize(7);
+}
+
+DEF back(xx){
+  backsize=228
+  backrot=112.5
+
+  xx=add(xx,20)
+  up
+  setpos(xx,0);
+  
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+  
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+ 
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+ 
+ 
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+ 
+ 
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+  
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+  
+  setrot(angle); forward(stepsize)
+  down  
+  setrot(backrot); forward(backsize)
+  up
+  forward(-backsize)
+  setrot(90); forward(shiftsize)
+  }
+
+setspeed(999999999999)
+
+a=0
+LOOP20{
+  cut(a)
+  a=add(a,40)
+}
+
+a=0
+setsize(5)
+LOOP4{
+  back(a)
+  a=add(a,shiftsize)
+  back(a)
+  a=add(a,-shiftsize)
+  a=add(a,40)
+}
+
+a=add(a,shiftsize)
+LOOP4{
+  back(a)
+  a=add(a,40)
+}
+
+a=add(a,-shiftsize)
+a=add(a,40)
+back(a)
+a=add(a,shiftsize)
+a=add(a,200)
+back(a)
+
+
